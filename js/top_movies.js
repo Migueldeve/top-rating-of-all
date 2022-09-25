@@ -8,8 +8,14 @@ const TopMovieNetflix = async() => {
 
     let Netflixs = '';
     datos.forEach(Netflix => {
-        Netflixs += `<h6>${Netflix.id}</h6>`;
-        Netflixs += `<h5>${Netflix.movie_name}</h5>`;
+        Netflixs += `
+        <hr>
+        <h6>${Netflix.id}</h6>
+        <div id="pelicula">
+            <img id="poster" src="https://firebasestorage.googleapis.com/v0/b/top-rating-of-all.appspot.com/o/${Netflix.image}">
+        </div>
+        <h5>${Netflix.movie_name}</h5>
+        <hr>`;
     });
 
     document.getElementById('Netflix').innerHTML = Netflixs;
