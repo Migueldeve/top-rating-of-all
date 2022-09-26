@@ -1,10 +1,10 @@
 const TopMovieNetflix = async() => {
     const respuesta = await fetch('http://localhost:3000/Top_movies_netflix');
     
-    console.log(respuesta);
+    //console.log(respuesta);
 
     const datos = await respuesta.json();
-    console.log(datos);
+    //console.log(datos);
 
     let Netflixs = '';
     datos.forEach(Netflix => {
@@ -28,10 +28,10 @@ TopMovieNetflix();
 const TopMovieHbo = async() => {
     const respuesta = await fetch('http://localhost:3000/Top_movies_hbo');
     
-    console.log(respuesta);
+    //console.log(respuesta);
 
     const datos = await respuesta.json();
-    console.log(datos);
+    //console.log(datos);
 
     let Hbos = '';
     datos.forEach(Hbo => {
@@ -55,10 +55,10 @@ TopMovieHbo();
 const TopMovieDisneyPlus = async() => {
     const respuesta = await fetch('http://localhost:3000/Top_movies_disney_plus');
     
-    console.log(respuesta);
+    //console.log(respuesta);
 
     const datos = await respuesta.json();
-    console.log(datos);
+    //console.log(datos);
 
     let Disneys = '';
     datos.forEach(Disney => {
