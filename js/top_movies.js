@@ -35,8 +35,14 @@ const TopMovieHbo = async() => {
 
     let Hbos = '';
     datos.forEach(Hbo => {
-        Hbos += `<h6>${Hbo.id}</h6>`;
-        Hbos += `<h5>${Hbo.movie_name}</h5>`;
+        Hbos += `
+        <hr>
+        <h6>${Hbo.id}</h6>
+        <div id="pelicula">
+            <img id="poster" src="https://firebasestorage.googleapis.com/v0/b/top-rating-of-all.appspot.com/o/${Hbo.image}">
+        </div>
+        <h5>${Hbo.movie_name}</h5>
+        <hr>`;
     });
 
     document.getElementById('Hbo').innerHTML = Hbos;
