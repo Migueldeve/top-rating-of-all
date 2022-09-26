@@ -62,8 +62,14 @@ const TopMovieDisneyPlus = async() => {
 
     let Disneys = '';
     datos.forEach(Disney => {
-        Disneys += `<h6>${Disney.id}</h6>`;
-        Disneys += `<h5>${Disney.movie_name}</h5>`;
+        Disneys += `
+        <hr>
+        <h6>${Disney.id}</h6>
+        <div id="pelicula">
+            <img id="poster" src="https://firebasestorage.googleapis.com/v0/b/top-rating-of-all.appspot.com/o/${Disney.image}">
+        </div>
+        <h5>${Disney.movie_name}</h5>
+        <hr>`;
     });
 
     document.getElementById('Disney').innerHTML = Disneys;
