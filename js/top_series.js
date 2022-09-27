@@ -1,4 +1,4 @@
-const TopMovieNetflix = async() => {
+const TopSerieNetflix = async() => {
     const respuesta = await fetch('http://localhost:3000/Top_series_netflix');
     
     //console.log(respuesta);
@@ -21,7 +21,34 @@ const TopMovieNetflix = async() => {
     document.getElementById('Netflix').innerHTML = Netflixs;
 }
 
-TopMovieNetflix();
+TopSerieNetflix();
+
+//-------------------
+
+const TopSerieHbo = async() => {
+    const respuesta = await fetch('http://localhost:3000/Top_series_hbo');
+    
+    //console.log(respuesta);
+
+    const datos = await respuesta.json();
+    //console.log(datos);
+
+    let Hbos = '';
+    datos.forEach(Hbo => {
+        Hbos += `
+        <hr>
+        <h6>${Hbo.id}</h6>
+        <div id="pelicula">
+            <img id="poster" src="https://firebasestorage.googleapis.com/v0/b/top-rating-of-all.appspot.com/o/${Hbo.image}">
+        </div>
+        <h5>${Hbo.serie_name}</h5>
+        <hr>`;
+    });
+
+    document.getElementById('Hbo').innerHTML = Hbos;
+}
+
+TopSerieHbo();
 
 //varialbles
 
