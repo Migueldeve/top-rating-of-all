@@ -1,0 +1,21 @@
+#Titulo1{
+    text-align: center;
+}
+
+#pelicula #poster {
+	width: 10%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+
+#Movil{
+    text-align: center;
+}
+
+#Titulo2{
+    text-align: center;
+}
+
+#Pc{
+    text-align: center;
+}
