@@ -25,30 +25,30 @@ TopGameMovil();
 
 //-------------------
 
-// const TopGamePc = async() => {
-//     const respuesta = await fetch('http://localhost:3000/Top_games_pc');
+const TopGamePc = async() => {
+    const respuesta = await fetch('http://localhost:3000/Top_games_pc');
     
-//     //console.log(respuesta);
+    //console.log(respuesta);
 
-//     const datos = await respuesta.json();
-//     //console.log(datos);
+    const datos = await respuesta.json();
+    //console.log(datos);
 
-//     let Pcs = '';
-//     datos.forEach(Pc => {
-//         Pcs += `
-//         <hr>
-//         <h6>${Pc.id}</h6>
-//         <div id="pelicula">
-//             <img id="poster" src="https://firebasestorage.googleapis.com/v0/b/top-rating-of-all.appspot.com/o/${Pc.image}">
-//         </div>
-//         <h5>${Pc.game_name}</h5>
-//         <hr>`;
-//     });
+    let Pcs = '';
+    datos.forEach(Pc => {
+        Pcs += `
+        <hr>
+        <h6>${Pc.id}</h6>
+        <div id="pelicula">
+            <img id="poster" src="https://firebasestorage.googleapis.com/v0/b/top-rating-of-all.appspot.com/o/${Pc.image}">
+        </div>
+        <h5>${Pc.game_name}</h5>
+        <hr>`;
+    });
 
-//     document.getElementById('Pc').innerHTML = Pcs;
-// }
+    document.getElementById('Pc').innerHTML = Pcs;
+}
 
-// TopGamePc();
+TopGamePc();
 
 //varialbles
 
