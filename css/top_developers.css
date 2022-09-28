@@ -1,0 +1,14 @@
+#Titulo1{
+    text-align: center;
+}
+
+#pelicula #poster {
+	width: 20%;
+	height: 10%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+
+#Developer{
+    text-align: center;
+}
