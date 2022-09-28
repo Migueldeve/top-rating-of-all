@@ -14,7 +14,7 @@
 
     <h1><div id="Titulo1"></div></h1>
 
-    <hr width=1400 size=4 color=black>
+    <hr size=4 color=black>
 
     <h1><div id="Netflix"><div></h1>
 
@@ -23,7 +23,7 @@
 
     <h1><div id="Titulo2"></div></h1>
 
-    <hr width=1400 size=4 color=black>
+    <hr size=4 color=black>
 
     <h1><div id="Hbo"><div></h1>
 
@@ -32,7 +32,7 @@
 
     <h1><div id="Titulo3"></div></h1>
 
-    <hr width=1400 size=4 color=black>
+    <hr size=4 color=black>
 
     <h1><div id="Disney"><div></h1>
 

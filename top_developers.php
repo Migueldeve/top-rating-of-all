@@ -14,7 +14,7 @@
 
     <h1><div id="Titulo1"></div></h1>
 
-    <hr width=1400 size=4 color=black>
+    <hr size=4 color=black>
 
     <h1><div id="Developer"><div></h1>
 
